@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <!---- Name = Avinash Dehariya, ERP=10334--->
+</head>
+<body>
+
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <br><br>
+
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <button onclick="mod()">%</button>
+
+    <p id="result"></p>
+
+    <script>
+        function add() {
+            result.innerHTML = Number(num1.value) + Number(num2.value);
+        }
+
+        function sub() {
+            result.innerHTML = Number(num1.value) - Number(num2.value);
+        }
+
+        function mul() {
+            result.innerHTML = Number(num1.value) * Number(num2.value);
+        }
+
+        function div() {
+            result.innerHTML = Number(num1.value) / Number(num2.value);
+        }
+
+        function mod() {
+            result.innerHTML = Number(num1.value) % Number(num2.value);
+        }
+    </script>
+
+</body>
+</html>
